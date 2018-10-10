@@ -16,3 +16,8 @@ names(dados)<- eb$Qualidade
 dados
 
 pareto.chart(dados)
+
+
+
+dev.copy(device = jpeg, file = "../graph/exerc6_pareto.png", width = 600, height = 400, res = 100)
+dev.off()

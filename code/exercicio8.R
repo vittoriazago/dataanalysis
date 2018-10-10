@@ -15,6 +15,9 @@ plot(table(cut(eh$Altura,breaks=7,right=FALSE,labels=classes)), ylab="Frequencia
      main="Distribuição de Frequencias - Exercicio 8", xlab="Alturas")
 
 
+dev.copy(device = jpeg, file = "../graph/exerc8_freq.png", width = 600, height = 400, res = 100)
+dev.off()
+
 
 # Histograma
 eh <- read.xlsx("exercicio8.xls", sheetName = "Plan1")
@@ -25,3 +28,6 @@ hist(eh$Altura,  main = "Histograma", labels = TRUE,
                 "cornsilk", "purple", "yellow"),
      ylab = "Altura média dos pacientes ", xlab = "Dados")
 
+
+dev.copy(device = jpeg, file = "../graph/exerc8_hist.png", width = 600, height = 400, res = 100)
+dev.off()

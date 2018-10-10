@@ -25,6 +25,8 @@ table(cut(eh$Casas,breaks=brk,right=FALSE,labels=classes))
 plot(table(cut(eh$Casas,breaks=brk,right=FALSE,labels=classes)), ylab="Frequencia",
      main="Distribuição de Frequencias - Exercicio 2", xlab="Casas")
 
+dev.copy(device = jpeg, file = "../graph/exerc2_freq.png", width = 600, height = 400, res = 100)
+dev.off()
 
 # Histograma
 eh <- read.xlsx("exercicio2.xls", sheetName = "Plan1")

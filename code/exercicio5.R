@@ -12,3 +12,5 @@ bp <- barplot(eb$QtdPessoas, names.arg = eb$Marcas,
         legend.text = eb$inscritos, sub = "Gráfico de Barras", 
         main = "Preferência de marcas")
 
+dev.copy(device = jpeg, file = "../graph/exerc5_barras.png", width = 600, height = 400, res = 100)
+dev.off()

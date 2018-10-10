@@ -18,6 +18,10 @@ table(cut(eh$Salarios,breaks=brk,right=FALSE,labels=classes))
 plot(table(cut(eh$Salarios,breaks=brk,right=FALSE,labels=classes)), ylab="Frequencia",
      main="Exercicio 9", xlab="Salarios")
 
+
+dev.copy(device = jpeg, file = "../graph/exerc9_freq.png", width = 600, height = 400, res = 100)
+dev.off()
+
 #histograma 
 
 eh <- read.xlsx("exercicio9.xls", sheetName = "Plan1")
@@ -29,4 +33,7 @@ hist(eh$Salarios,  main = "Histograma", labels = TRUE,
      ylab = "Exercicio 9 ", xlab = "Dados")
 
 
+
+dev.copy(device = jpeg, file = "../graph/exerc9_hist.png", width = 600, height = 400, res = 100)
+dev.off()
 
